@@ -4,7 +4,7 @@ import java.io.IOException;
 
 import coreFramework.ORUtil;
 import coreFramework.TrippleDes;
-import coreFramework.decryption;
+
 
 /*
 * This class set upp test in the Befor annotated method.
@@ -30,10 +30,7 @@ public class EntryPoint {
     @Before
     public void init() throws Throwable {
         System.out.println("init-method");
-        decryption cd=new decryption();
-        decryption.main(null);
         TrippleDes pass_set = new TrippleDes();
-        
         String AT_UserName = ORUtil.getConfigValue("AT_UserName");
         String AT_Password = pass_set.decrypt( ORUtil.getConfigValue("AT_Password"));
         String SIT_UserName = ORUtil.getConfigValue("SIT_UserName");
