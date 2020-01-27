@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+extraProperties=sonar.host.url\=http\://localhost\:9000/\r\nsonar.language\=accessibility
+projectKey=se.telia.siebel\:siebel-api-test
+serverUrl=http\://localhost\:9000
+version=2
